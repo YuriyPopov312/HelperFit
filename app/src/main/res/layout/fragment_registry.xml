@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Avtorisation"
+    android:background="@drawable/style_for_windows">
+
+    <Button
+        android:id="@+id/btnCansel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/slytle_for_button"
+        android:layout_margin="6dp"
+        android:text="&#5130;"
+        />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Ок"
+        android:textSize="13sp"
+        android:layout_margin="6dp"
+        android:textColor="#000000"
+        android:textColorHint="#8F8F80"
+        android:background="@drawable/slytle_for_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#283030"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/prom"
+            android:text="___"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/editTextNameR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваше имя (2..10)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/editTextLoginR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш логин (5..15)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш вес (кг)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/editTextHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш рост (см)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/editTextPasswordR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш пароль (Aaa!&amp;$)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="4dp"
+        android:text="Выберите ваш пол"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/men"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мужской"
+            android:textColor="#FFFFFF"
+        />
+
+        <RadioButton
+            android:id="@+id/women"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Женский"
+            android:textColor="#FFFFFF"
+            />
+</RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавьте фото"
+            android:layout_gravity="start"
+            android:layout_marginStart="4dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="14dp"
+            android:textSize="18dp"/>
+
+            <ImageButton
+                android:id="@+id/edit_foto_r"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/ic_baseline_add_a_photo_24"
+                android:layout_gravity="start"
+                />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

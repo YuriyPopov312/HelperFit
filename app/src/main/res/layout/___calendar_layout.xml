@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/style_for_windows"
+    android:id="@+id/__activity_custom_calendar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/there_we_could_sail">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/previousBtn"
+            android:text="&#5130;"
+            android:textColor="#000000"
+            android:background="@drawable/slytle_for_button"
+            />
+
+        <TextView
+            android:id="@+id/CurrentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="CurrentDate"
+            android:textColor="@color/sea_foaming"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/nextBtn"
+            android:text="&#5125;"
+            android:textColor="#000000"
+            android:background="@drawable/slytle_for_button"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Пн"
+        android:textColor="#3A3A3A"
+        android:background="#C5DCED"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Вт"
+        android:textColor="#3A3A3A"
+        android:background="#C5DCED"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ср"
+        android:textColor="#3A3A3A"
+        android:background="#C5DCED"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Чт"
+        android:textColor="#3A3A3A"
+        android:background="#C5DCED"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Пт"
+        android:textColor="#3A3A3A"
+        android:background="#C5DCED"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Сб"
+        android:textColor="#3A3A3A"
+        android:background="#EDC5C5"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#353535"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Вс"
+        android:textColor="#3A3A3A"
+        android:background="#EDC5C5"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Нажмите на нужный день чтобы запланировать тренировку \n\nДля просмотра запланированных тренировок на конкретное число, зажмите этот день"
+        android:textColor="#99B1B1B1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/slytle_for_button"
+        android:text="&#5130;"
+        android:textColor="#000000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

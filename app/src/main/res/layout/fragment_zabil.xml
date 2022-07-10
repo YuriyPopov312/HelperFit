@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Zabil"
+    android:background="@drawable/style_for_windows">
+
+
+    <Button
+        android:id="@+id/btnBackZabil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/slytle_for_button"
+        android:layout_margin="6dp"
+        android:text="&#5130;"
+        />
+
+    <Button
+        android:id="@+id/btnVostPass"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Ок"
+        android:textSize="13sp"
+        android:layout_margin="6dp"
+        android:textColor="#000000"
+        android:textColorHint="#8F8F80"
+        android:background="@drawable/slytle_for_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="#283030"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="40dp">
+
+        <EditText
+            android:id="@+id/vostPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/editTextNameZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваше имя "
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/editTextLoginZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш логин "
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextWeightZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш вес (кг)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/editTextHeightZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш рост (см)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B1B1B1"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

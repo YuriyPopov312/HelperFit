@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.MainClientFragment"
+    android:background="@drawable/style_for_windows">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="22dp"
+        android:weightSum="8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="22dp">
+
+
+        <Button
+            android:id="@+id/look_tren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Общие тренировки"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/treningKategor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Тренировки по категориям"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/YourTrening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Личные тренировки"
+            android:textColor="#2E2E2E" />
+
+
+        <Button
+            android:id="@+id/log_trening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Планировщик тренировок"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/program_trens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Программы тренировок"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/prof_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Новости"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/recomend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Рекомендации"
+            android:textColor="#2E2E2E" />
+
+        <Button
+            android:id="@+id/Statistika_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/slytle_for_button"
+            android:text="Статистика"
+            android:textColor="#2E2E2E" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

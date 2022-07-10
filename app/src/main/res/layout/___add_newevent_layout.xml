@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/there_we_could_sail"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/items"
+            app:cardUseCompatPadding="false">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/items"
+        android:hint="Введите название тренировки"
+        android:id="@+id/eventname"
+        android:backgroundTint="@color/items"
+        android:inputType="textShortMessage"
+        android:gravity="center"
+        />
+        </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/seteventtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/items"
+            app:cardUseCompatPadding="false">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/items"
+            android:textStyle="bold"
+            android:id="@+id/eventtime"
+
+
+            />
+        </androidx.cardview.widget.CardView>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уведомление"
+            android:checked="true"
+            android:layout_marginStart="60dp"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#FFFFFF"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="14dp"
+            android:id="@+id/alarmme"
+            android:layout_weight="2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Запланировать"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#D92E2E2E"
+        android:background="@drawable/slytle_for_button"
+        android:id="@+id/addevent"
+        />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

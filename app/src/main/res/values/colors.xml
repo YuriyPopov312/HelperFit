@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="green">#BF97FFD5</color>
+
+    <color name="items">#B9DFC8</color>
+    <color name="sunlit_sea">#80CFF09E</color>
+    <color name="sea_foaming">#CCA8F0D7</color>
+    <color name="sea_showing_green">#E683CAA5</color>
+    <color name="there_we_could_sail">#3B8686</color>
+    <color name="adrift_in_dreams">#0B486B</color>
+    <color name="menu">#052F47</color>
+</resources>

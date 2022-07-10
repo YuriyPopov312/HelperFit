@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Recomendation"
+    android:background="@drawable/style_for_windows">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adminWindowTrening"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_back_alltrens"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/slytle_for_button"
+            android:layout_margin="6dp"
+            android:text="&#5130;"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/linerlayout_fragmentadmin_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        >
+        <LinearLayout
+            android:id="@+id/search_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="14"
+            android:layout_margin="4dp"
+            >
+            <EditText
+                android:layout_weight="13"
+                android:id="@+id/search_textAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#fff"
+                android:textColorHint="#C8C8C8"
+                android:backgroundTint="@color/colorAccent"
+                android:hint="Поиск по названию"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnSearchAll"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/ic_baseline_search"
+                />
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_all_tren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="100dp"
+            tools:listitem="@layout/item_all_trens" />
+
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

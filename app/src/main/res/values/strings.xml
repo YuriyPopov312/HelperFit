@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Helper Fit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="progTrensTip">
+        <item>Любой</item>
+        <item>Начинающий</item>
+        <item>Средний</item>
+        <item>Продвинутый</item>
+    </string-array>
+
+
+</resources>

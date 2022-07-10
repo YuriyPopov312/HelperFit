@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/style_for_windows"
+    tools:context=".Fragments.Kategorii">
+
+    <Button
+        android:id="@+id/back_kategorii"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/slytle_for_button"
+        android:layout_margin="6dp"
+        android:text="&#5130;"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/tren_rastyajka"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Растяжка"
+                android:textColor="#2E2E2E" />
+
+            <Button
+                android:id="@+id/btn_all_front"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Передние мышцы"
+                android:textColor="#2E2E2E" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/all_front"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:padding="8dp"
+                    android:src="@drawable/front"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/sheya_front"
+                    android:layout_width="79dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="96dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/grud_front"
+                    android:layout_width="100dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginTop="132dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delta_left_front"
+                    android:layout_width="34dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delta_right_front"
+                    android:layout_width="34dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="252dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/biceps_left_front"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="164dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/biceps_right_front"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="168dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/predplecho_right_front"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="272dp"
+                    android:layout_marginTop="244dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/predplecho_left_front"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="236dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/abs_front"
+                    android:layout_width="83dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="204dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bedro_left_front"
+                    android:layout_width="52dp"
+                    android:layout_height="105dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginTop="348dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bedro_right_front"
+                    android:layout_width="50dp"
+                    android:layout_height="103dp"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginTop="348dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--_____________________________________________________________________-->
+
+            <Button
+                android:id="@+id/btn_all_back"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Задние мышцы"
+                android:textColor="#2E2E2E" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/all_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/mentoback"/>
+
+                <Button
+                    android:id="@+id/trapeciya_back"
+                    android:layout_width="79dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="96dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/spin_back"
+                    android:layout_width="100dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginTop="132dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delta_left_back"
+                    android:layout_width="34dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delta_right_back"
+                    android:layout_width="34dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="252dp"
+                    android:layout_marginTop="116dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/triceps_left_back"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="164dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/triceps_right_back"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="252dp"
+                    android:layout_marginTop="164dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ikra_right_back"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginTop="484dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/ikra_left_back"
+                    android:layout_width="39dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginTop="480dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/poyasnica_back"
+                    android:layout_width="83dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="156dp"
+                    android:layout_marginTop="204dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bedro_left_back"
+                    android:layout_width="47dp"
+                    android:layout_height="118dp"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginTop="312dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bedro_right_back"
+                    android:layout_width="46dp"
+                    android:layout_height="119dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="316dp"
+                    android:background="@drawable/slytle_for_mishci"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/tren_street"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Уличные"
+                android:textColor="#2E2E2E" />
+
+            <Button
+                android:id="@+id/tren_home"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Домашние"
+                android:textColor="#2E2E2E" />
+
+            <Button
+                android:id="@+id/tren_kardio"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Кардио"
+                android:textColor="#2E2E2E" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

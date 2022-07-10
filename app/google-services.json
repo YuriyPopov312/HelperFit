@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258965943401",
+    "firebase_url": "https://vkrnowversion.firebaseio.com",
+    "project_id": "vkrnowversion",
+    "storage_bucket": "vkrnowversion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258965943401:android:a59a43e6217c30d208def8",
+        "android_client_info": {
+          "package_name": "com.example.vkr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258965943401-d57p6achrk2gm7kldeercc942d5lkbo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJUa6wffeL_v-PAxwlbPx5mGfonjDpkmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258965943401-d57p6achrk2gm7kldeercc942d5lkbo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

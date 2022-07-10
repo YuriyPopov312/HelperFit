@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SettingFragment"
+    android:orientation="vertical"
+    android:background="@drawable/style_for_windows">
+    <Button
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/edit_stepmax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slytle_for_button"
+        android:text="Изменить дневную цель шагов"
+        android:textSize="14sp" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/forma_stepmax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#283030"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:id="@+id/step_max"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B1B1B1"
+        android:hint="Введите вашу дневную цель шагов"
+        android:layout_margin="8dp"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/setting_ok"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:background="@drawable/slytle_for_button"
+        android:text="Ок"
+        android:textSize="14sp"
+        android:layout_margin="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slytle_for_button"
+        android:text="Изменить информацию о себе"
+        android:textSize="14sp"
+        android:layout_margin="8dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_forma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#283030"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNameE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ваше новое имя (2..10)"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B1B1B1" />
+
+
+            <EditText
+                android:id="@+id/editTextWeightE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ваш новый вес (кг)"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B1B1B1" />
+
+            <EditText
+                android:id="@+id/editTextHeightE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ваш новый рост (см)"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B1B1B1" />
+
+            <EditText
+                android:id="@+id/editTextPasswordE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ваш новый пароль (Aaa!&amp;$)"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B1B1B1" />
+
+            <Button
+                android:id="@+id/edit_info_ok"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:background="@drawable/slytle_for_button"
+                android:text="Ок"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/edit_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slytle_for_button"
+        android:text="Изменить фото"
+        android:textSize="14sp"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/exit_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slytle_for_button"
+        android:text="Выйти из аккаунта"
+        android:textSize="14sp"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
